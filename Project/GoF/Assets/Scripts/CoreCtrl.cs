@@ -11,13 +11,16 @@ using UnityEngine;
 
 using BuildPattern;
 using FactoryPattern;
+using PrototypePattern;
 
 namespace Global{
 	public class CoreCtrl : MonoBehaviour {
 
 		void Start () {
-            TestBuildPattern.execute();          
-            TestFactoryPattern.TestSimpleFactoryPattern();
+            //TestBuildPattern.execute();          
+            //TestFactoryPattern.TestSimpleFactoryPattern();
+            //TestFactoryPattern.TestFactoryMethodPattern();
+            TestPrototypePattern.execute();
 		}
 	}
 }

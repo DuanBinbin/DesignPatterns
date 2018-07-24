@@ -19,7 +19,18 @@ namespace FactoryPattern
             operation.numberB = 3;
             float result = operation.GetResult();
             Debug.Log("SimpleFactoryPattern result = " + result);           
-        }   
+        } 
+        
+        public static void TestFactoryMethodPattern()
+        {
+            IFactory operFactory = new AddFactory();
+            Operation oper = operFactory.CreateOperation();
+            oper.numberA = 4;
+            oper.numberB = 6;
+            float result =  oper.GetResult();
+
+            Debug.Log("TestFactoryMethodPattern : AddFactory --> result = " + result);
+        }  
 	}
 }
 
