@@ -9,10 +9,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-using BuildPattern;
-using FactoryPattern;
-using PrototypePattern;
-
 namespace Global{
 	public class CoreCtrl : MonoBehaviour {
 
@@ -20,7 +16,7 @@ namespace Global{
             //TestBuildPattern.execute();          
             //TestFactoryPattern.TestSimpleFactoryPattern();
             //TestFactoryPattern.TestFactoryMethodPattern();
-            TestPrototypePattern.execute();
+            //TestPrototypePattern.execute();
 		}
 	}
 }
