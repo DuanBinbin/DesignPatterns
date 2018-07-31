@@ -13,20 +13,22 @@ namespace PrototypeStructure
 {
     public class PrototypeStructure : MonoBehaviour
     {
-
         // Use this for initialization
         void Start()
         {
-            ConcretePrototypeA cpA = new ConcretePrototypeA("A");
-            ConcretePrototypeA _cpA = (ConcretePrototypeA)cpA.Clone();
-            Debug.Log("TestPrototypePattern:ConcretePrototypeA id = " + _cpA.Id);
+            ConcretePrototypeA concretePrototypeA = new ConcretePrototypeA("A");
+            ConcretePrototypeA _concretePrototypeA = (ConcretePrototypeA)concretePrototypeA.Clone();
+            Debug.Log(GetType() + " --> ConcretePrototypeA id = " + _concretePrototypeA.Id);
 
-            ConcretePrototypeB cpB = new ConcretePrototypeB("B");
-            ConcretePrototypeB _cpB = (ConcretePrototypeB)cpB.Clone();
-            Debug.Log("TestPrototypePattern: ConcretePrototypeB id = " + _cpB.Id);
+            ConcretePrototypeB concretePrototypeB = new ConcretePrototypeB("B");
+            ConcretePrototypeB _concretePrototypeB = (ConcretePrototypeB)concretePrototypeB.Clone();
+            Debug.Log(GetType() + " --> ConcretePrototypeB id = " + _concretePrototypeB.Id);
         }
     }
 
+    /// <summary>
+    /// declares an interface for cloning itself
+    /// </summary>
     public abstract class Prototype
     {
 
@@ -49,23 +51,15 @@ namespace PrototypeStructure
     }
 
     /// <summary>
-    /// 具体原型类A
+    /// implements an operation for cloning itself
     /// </summary>
     public class ConcretePrototypeA : Prototype
     {
-        /// <summary>
-        /// 构造函数
-        /// </summary>
-        /// <param name="id"></param>
         public ConcretePrototypeA(string id) : base(id)
         {
 
         }
 
-        /// <summary>
-        /// 抽象方法实现
-        /// </summary>
-        /// <returns></returns>
         public override Prototype Clone()
         {
             return (Prototype)this.MemberwiseClone();
@@ -73,23 +67,14 @@ namespace PrototypeStructure
     }
 
     /// <summary>
-    /// 原型具体实现类B
+    /// implements an operation for cloning itself
     /// </summary>
     public class ConcretePrototypeB : Prototype
     {
-
-        /// <summary>
-        /// 构造函数
-        /// </summary>
-        /// <param name="id"></param>
         public ConcretePrototypeB(string id) : base(id)
         {
         }
 
-        /// <summary>
-        /// 实现父类的抽象方法
-        /// </summary>
-        /// <returns></returns>
         public override Prototype Clone()
         {
             return (Prototype)this.MemberwiseClone();
