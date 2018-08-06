@@ -31,11 +31,18 @@ namespace StrategyStructure
         }
     }
 
+    /// <summary>
+    /// declares an interface common to all support algorithms.Context uses this interface to 
+    /// call the algorithm defined by a ConcreteStrategy
+    /// </summary>
     abstract class Strategy
     {
         public abstract void AlgorithmInterface();
     }
 
+    /// <summary>
+    /// implements the algorithm using the Strategy interface
+    /// </summary>
     class ConcreteStrategyA : Strategy
     {
         public override void AlgorithmInterface()
@@ -60,6 +67,11 @@ namespace StrategyStructure
         }
     }
 
+    /// <summary>
+    /// is configured with a ConcreteStrategy object
+    /// maintains a reference to a Strategy object
+    /// may define an interface that lets Strategy access its data
+    /// </summary>
     class Context
     {
         private Strategy _strategy;
@@ -75,5 +87,3 @@ namespace StrategyStructure
         }
     }
 }
-
-
