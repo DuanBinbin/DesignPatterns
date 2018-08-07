@@ -1,8 +1,9 @@
-﻿/*==============================
+﻿/*
+* ==============================
 * FileName:		ScriptInitializer
 * Author:		DuanBin
 * CreateTime:	8/6/2018 4:36:16 PM
-* Description:		
+* Description:	用于初始化脚本文件，使用前请先修改Unity的脚本模板，该文件放置于Editor文件夹下	
 * ==============================
 */
 using System.IO;
