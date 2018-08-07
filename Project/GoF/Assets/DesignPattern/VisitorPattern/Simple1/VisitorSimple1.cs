@@ -39,6 +39,7 @@ namespace VisitorSimple1
 
     /// <summary>
     /// 定义形状访问者接口
+    /// 定义让每个不同形状可调用的方法
     /// </summary>
     public abstract class IShapeeVisitor
     {
@@ -61,6 +62,10 @@ namespace VisitorSimple1
         }
     }
 
+    /// <summary>
+    /// 形状容器类
+    /// 包含所有产生的IShape对象
+    /// </summary>
     public class ShapeContainer
     {
         private List<IShape> _ShapeesList = new List<IShape>();
@@ -81,6 +86,10 @@ namespace VisitorSimple1
         }
     }
 
+    /// <summary>
+    /// 定义形状的接口操作
+    /// 包含了RunVisitor方法，来执行IShapeVisitor访问者中的方法
+    /// </summary>
     public abstract class IShape
     {
         protected RenderEngine _renderEngine = null;        // 使用的绘图引擎
@@ -108,6 +117,10 @@ namespace VisitorSimple1
         public abstract void RunVisitor(IShapeeVisitor theVisitor); 
     }
 
+    /// <summary>
+    /// 实现形状接口子类
+    /// 重新实现RunVisitor的方法，并根据不同的子类来调用IShapeVisitor访问者的特定方法
+    /// </summary>
     public class Sphere : IShape
     {
         public Sphere(RenderEngine theRenderEngine)
