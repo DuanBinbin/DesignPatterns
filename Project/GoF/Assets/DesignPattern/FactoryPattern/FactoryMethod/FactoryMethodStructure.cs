@@ -23,8 +23,10 @@ namespace FactoryMethodStructure
         void Start()
         {
             Debug.Log("第一种方式：由子类产生");
-            Factory factory1 = new ConcreteCreatorProductA();           
-            Factory factory2 = new ConcreteCreatorProductB();           
+            Factory factory1 = new ConcreteCreatorProductA();
+            factory1.FactoryMethod();
+            Factory factory2 = new ConcreteCreatorProductB();
+            factory2.FactoryMethod();                    
 
             Debug.Log("\n ---------------------------------- \n");
 
