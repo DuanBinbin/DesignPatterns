@@ -37,7 +37,7 @@ namespace CommandPatternSimple1
 	}
 
     /// <summary>
-    /// abstract command class
+    /// 抽象命令
     /// </summary>
     public abstract class Command
     {
@@ -52,7 +52,7 @@ namespace CommandPatternSimple1
     }
 
     /// <summary>
-    /// concrete command class, bake mutton
+    /// 具体命令 - 烤羊肉
     /// </summary>
     public class BakeMuttonCommand : Command
     {
@@ -68,7 +68,7 @@ namespace CommandPatternSimple1
     }
 
     /// <summary>
-    /// concrete command class, bake chicken command
+    /// 具体命令 - 烤鸡翅
     /// </summary>
     public class BakeChickenCommand : Command
     {
@@ -83,6 +83,9 @@ namespace CommandPatternSimple1
         }
     }
 
+    /// <summary>
+    /// 具体执行者 - 烤肉串者
+    /// </summary>
     public class Barbucuer
     {
         public void BakeMutton()
@@ -97,7 +100,7 @@ namespace CommandPatternSimple1
     }
 
     /// <summary>
-    /// waiter girl
+    /// 服务员
     /// </summary>
     public class Waiter
     {
