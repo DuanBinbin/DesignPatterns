@@ -34,5 +34,9 @@
 
 Github原本：[munificent/game-programming-patterns](https://github.com/munificent/game-programming-patterns)
 
+[《游戏编程模式》全书内容提炼总结](https://blog.csdn.net/poem_qianmo/article/details/53240330)
+
+
+
 
 
