@@ -14,8 +14,6 @@
 
 ## 四、参考文档
 
-[随笔分类 - 设计模式与游戏完美开发](http://www.cnblogs.com/revoid/category/954799.html)
-
 [QianMO/Unity-Design-Pattern](https://github.com/QianMo/Unity-Design-Pattern)
 
 [图说设计模式](http://design-patterns.readthedocs.io/zh_CN/latest/index.html)
@@ -26,7 +24,7 @@
 
 > 名字说的很恰当，只有理论没有实践，但是能够把原理讲清楚也已经很不错了
 
-游戏编程模式
+**游戏编程模式**
 
 英文版在线阅读： [Game Programming Patterns](http://gameprogrammingpatterns.com/)
 
@@ -35,6 +33,10 @@
 Github原本：[munificent/game-programming-patterns](https://github.com/munificent/game-programming-patterns)
 
 [《游戏编程模式》全书内容提炼总结](https://blog.csdn.net/poem_qianmo/article/details/53240330)
+
+[C#设计模式总结](https://www.cnblogs.com/zhili/p/DesignPatternSummery.html)
+
+
 
 
 
