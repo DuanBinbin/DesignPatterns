@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">crash</string>
+
+    <string name="app_crashHandler_dialog_summary">crash</string>
+    <string name="app_crashHandler_dialog_title">crash</string>
+    <string name="app_crashHandler_dialog_upload">crash</string>
+    <string name="app_crashHandler_dialog_reIndex">crash</string>
+
+</resources>
